@@ -1,0 +1,401 @@
+.about-section {
+  margin-top: 11rem;
+
+  @media @medium {
+    margin-top: 7rem;
+  }
+
+  @media @phone {
+    margin-top: 0;
+  }
+  
+  .about-text {
+    .disFlex();
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: @bkgd-color;
+    justify-content: center;
+    height: 25rem;
+
+    @media @max620 {
+      height: 30rem;
+    }
+
+    @media @phone {
+      height: 32rem;
+    }
+
+    h2 {
+      font-size: 3.5rem;
+      width: 100%;
+      padding-left: 3rem;
+      color: @font-color;
+
+      @media @max1080 {
+        font-size: 3.25rem;
+      }
+
+      @media @max750 {
+        font-size: 3rem;
+      }
+
+      @media @max620 {
+        font-size: 2.75rem;
+      }
+    }
+
+    p {
+      text-align: justify;
+      font-size: 2.25rem;
+      width: 100%;
+      margin-top: 3rem;
+      padding: 0 3rem 0 3rem;
+      color: @font-color;
+
+      @media @max1080 {
+        font-size: 2rem;
+      }
+
+      @media @max750 {
+        font-size: 2rem;
+        margin-top: 2.25rem;
+      }
+
+      @media @max620 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .img-container {
+    width: 100%;
+    height: 32rem;
+    margin-top: 7rem;
+
+    @media @max1080 {
+      height: 23rem;
+      margin-top: 6rem;
+    }
+
+    @media @medium {
+      height: 20rem;
+      margin-top: 5.5rem;
+    }
+
+    @media @max620 {
+      height: 17rem;
+      margin-top: 4.5rem;
+    }
+
+    @media @phone {
+      height: 14rem;
+      margin-top: 4rem;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.middle-section {
+  .disFlex();
+  width: 100%;
+  margin-top: 7rem;
+  justify-content: space-between;
+
+  @media @max1080 {
+    margin-top: 6rem;
+  }
+
+  @media @medium {
+    margin-top: 5.5rem;
+  }
+
+  @media @max750 {
+    flex-direction: column;
+  }
+
+  @media @max620 {
+    margin-top: 4.5rem;
+  }
+
+  @media @phone {
+    margin-top: 4rem;
+    flex-direction: column;
+  }
+
+  .img-container-middle {
+    width: 50%;
+
+    @media @max750 {
+      width: 100%;
+      background-color: @bkgd-color;
+    }
+
+    @media @phone {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      @media @max750 {
+        padding: 2.5rem;        
+      }
+
+      @media @phone {
+        padding: 0rem;
+      }
+    }
+  }
+
+  .middle-section-text {
+    width: 50%;
+    .disFlex();
+    flex-direction: column;
+    padding: 0 7.5rem 0 7.5rem;
+    background-color: @bkgd-color;
+    justify-content: space-evenly;
+
+    @media @max1180 {
+      padding: 0 5rem 0 5rem;
+    }
+
+    @media @medium {
+      padding: 0 4rem 0 4rem;
+    }
+
+    @media @max750 {
+      padding: 0 3rem 0 3rem;
+      width: 100%;
+      padding: 0 2.5rem 0 2.5rem;
+      height: 22rem;
+      margin-top: 5.5rem;
+      justify-content: space-evenly;
+    }
+
+    @media @max620 {
+      padding: 0 2rem;
+      margin-top: 3.5rem;
+    }
+
+    @media @phone {
+      width: 100%;
+      padding: 0 2.5rem 0 2.5rem;
+      height: 25rem;
+      margin-top: 3.5rem;
+      justify-content: space-evenly;
+    }
+
+    h2 {
+      font-size: 3.25rem;
+      text-align: center;
+      color: @font-color;
+      
+      @media @max1180 {
+        font-size: 3rem;
+      }
+
+      @media @max870 {
+        font-size: 2.75rem;
+      }
+
+      @media @max750 {
+        font-size: 3rem;
+        text-align: initial;
+      }
+
+      @media @phone {
+        text-align: initial;
+        font-size: 2.75rem;
+      }
+    }
+
+    p {
+      font-size: 2.25rem;
+      text-align: justify;
+      color: @font-color;
+
+      @media @max1180 {
+        font-size: 2rem;
+      }
+
+      // @media @max1080 {
+      // }
+
+      @media @max870 {
+        font-size: 1.85rem;
+      }
+
+      @media @max750 {
+        font-size: 2rem;
+      }
+
+      // @media @phone {
+      // }
+    }
+  }
+}
+
+.lower-section {
+  .disFlex();
+  width: 100%;
+  justify-content: space-between;
+
+  @media @max750 {
+    margin-top: 5.5rem;
+  }
+
+  @media @max620 {
+    margin-top: 4rem;
+    flex-direction: column-reverse;
+  }
+
+  @media @phone {
+    margin-top: 4rem;
+    flex-direction: column-reverse;
+  }
+
+  .cta {
+    width: 50%;
+    background-color: @bkgd-color;
+    .disFlex();
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media @max620 {
+      width: 100%;
+      margin-top: 3.5rem;
+      height: 25rem;
+    }
+
+    @media @phone {
+      width: 100%;
+      margin-top: 3.5rem;
+      height: 25rem;
+    }
+
+    h2 {
+      color: @font-color;
+      font-size: 3.25rem;
+      margin-bottom: 3rem;
+
+      @media @max870 {
+        font-size: 2.75rem;
+      }
+
+      @media @max750 {
+        font-size: 2.65rem;
+      }
+    }
+
+    .btn {
+      border-radius: 4px;
+      border: 2px solid @btn-color;
+      color: @btn-color;
+      display: inline-block;
+      margin: 0 .25em;
+      overflow: hidden;
+      padding: 24px 60px 24px 16px;
+      position: relative;
+      text-decoration: none;
+      line-height: 1;
+
+      @media @phone {
+        padding: 18px 60px 18px 16px;
+      }
+
+      .btn-content {
+        font-size: 3rem;
+        line-height: 1.2;
+        padding: 0 26px;
+        position: relative;
+        right: 0;
+        transition: right 300ms ease;
+        display: block;
+        text-align: left;
+      }
+
+      .icon {
+        border-left: 1px solid @btn-color;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 50%;
+        transition: all 300ms ease;
+        transform: translateY(-50%);
+        width: 58px;
+        height: 70%;
+        font-size: 2rem;
+
+        i {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: @btn-color;
+        opacity: 0;
+        transition: opacity 300ms ease;
+      }
+
+      &:hover {
+        .btn-content {
+          right: 100%;
+        }
+
+        .icon {
+          border-left: 0;
+          font-size: 5rem;
+          width: 100%;
+        }
+
+        &:after {
+          opacity: .2;
+        }
+      }
+    }
+  }
+
+
+  .img-container-bottom {
+    width: 50%;
+
+    @media @max620 {
+      background-color: @bkgd-color;
+      width: 100%;
+    }
+
+    @media @phone {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      @media @max620 {
+        width: 100%;
+        padding: 2.5rem;
+      }
+
+      @media @phone {
+        padding: 0rem;
+      }
+    }
+  }
+}
