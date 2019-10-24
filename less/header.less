@@ -1,0 +1,78 @@
+header {
+  .disFlex();
+  position: fixed;
+  padding-left: 4rem;
+  padding-right: 4rem;
+
+  @media @phone {
+    position: initial;
+    flex-direction: column;
+    padding-right: 4rem;
+  }
+
+  .logo {
+    width: 15%;
+    background-color: @logo-bkgd;
+    .disFlex();
+    justify-content: center;
+    align-items: center;
+
+    @media @phone {
+      width: 100%;
+    }
+
+    img {
+      width: 85%;
+
+      @media @max750 {
+        width: 95%;
+      }
+
+      @media @phone {
+        width: 25%;
+      }
+    }
+  }
+
+  .navbar {
+    .disFlex();
+    width: 85%;
+    justify-content: space-evenly;
+    background-color: #494ca2;
+    height: 8rem;
+    align-items: center;
+
+    @media @medium {
+      height: 6.5rem;
+    }
+
+    @media @phone {
+      width: 100%;
+      height: 5rem;
+    }
+
+    a {
+      font-size: 3rem;
+      text-decoration: none;
+      color: #e3e7f1;
+
+      @media @medium {
+        font-size: 2.5rem;
+      }
+
+      @media @phone {
+        font-size: 2.5rem;
+      }
+    }
+
+    a:hover {
+      color: #c6cbef;
+    }
+
+    // Vertical Line
+    .vl {
+      border-left: 0.1rem solid #e3e7f1;
+      height: 3rem;
+    }
+  }
+}
