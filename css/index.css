@@ -243,12 +243,12 @@ header .navbar .vl {
 }
 @media (max-width: 620px) {
   .about-section .about-text {
-    height: 30rem;
+    height: 27rem;
   }
 }
 @media (max-width: 500px) {
   .about-section .about-text {
-    height: 32rem;
+    height: 29rem;
   }
 }
 .about-section .about-text h2 {
@@ -274,7 +274,7 @@ header .navbar .vl {
 }
 .about-section .about-text p {
   text-align: justify;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   width: 100%;
   margin-top: 3rem;
   padding: 0 3rem 0 3rem;
@@ -282,12 +282,12 @@ header .navbar .vl {
 }
 @media (max-width: 1080px) {
   .about-section .about-text p {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 }
 @media (max-width: 750px) {
   .about-section .about-text p {
-    font-size: 2rem;
+    font-size: 2.15rem;
     margin-top: 2.25rem;
   }
 }
