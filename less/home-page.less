@@ -194,12 +194,13 @@
     @media @max620 {
       padding: 0 2rem;
       margin-top: 3.5rem;
+      height: 26rem;
     }
 
     @media @phone {
       width: 100%;
-      padding: 0 2.5rem 0 2.5rem;
-      height: 25rem;
+      padding: 0;
+      height: 26rem;
       margin-top: 3.5rem;
       justify-content: space-evenly;
     }
@@ -235,9 +236,17 @@
           text-align: initial;
         }
 
+        @media @max680 {
+          font-size: 4.5rem;
+        }
+
+        @media @max620 {
+          font-size: 4rem;
+        }
+
         @media @phone {
           text-align: initial;
-          font-size: 2.75rem;
+          // font-size: 3rem;
         }
       }
 
@@ -266,13 +275,17 @@
           list-style-position: inside;
         }
 
-      // @media @phone {
-      // }
-      // li {
-      //   list-style-type: disc;
-      //   list-style-position: outside;
-      //   margin-top: .8rem;
-      // }
+        @media @max680 {
+          font-size: 2.7rem;
+        }
+
+        @media @max620 {
+          font-size: 2.5rem;
+        }
+
+        @media @phone {
+          font-size: 2.4rem;
+        }        
       }
     }
   }
