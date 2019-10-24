@@ -1,0 +1,523 @@
+@font-face {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/s/varelaround/v11/w8gdH283Tvk__Lua32TysjIfp8uK.ttf) format('truetype');
+}
+@font-face {
+  font-family: "lucida_granderegular";
+  src: url("../fonts/lucida-grande/lucidagrande-webfont.woff2") format("woff2"), url("../fonts/lucida-grande/lucidagrande-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "lucida_grandebold";
+  src: url("../fonts/lucida-grande/lucidagrandebold-webfont.woff2") format("woff2"), url("../fonts/lucida-grande/lucidagrandebold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CharterBoldBT";
+  src: url(../fonts/charter-bold/CharterBoldBT.ttf) format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.section-title {
+  font-size: 2rem;
+  font-family: "lucida_grandebold", sans-serif;
+  color: #464646;
+}
+@media (min-width: 992px) {
+  .section-title {
+    font-size: 3.4rem;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "lucida_granderegular", sans-serif;
+}
+body {
+  background: #fff8f3;
+}
+
+.about__navbar {
+  display: none;
+  height: 60px;
+  padding: 0 1.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "lucida_granderegular", sans-serif;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  color: white;
+  top: 0;
+  background: #8186D5;
+}
+@media (min-width: 992px) {
+  .about__navbar {
+    padding: 0 3.2rem;
+    height: 70px;
+  }
+}
+.about__navbar .navbar__logo {
+  margin-right: auto;
+  font-size: 2.6rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+  color: white;
+  text-decoration: none;
+  font-family: "CharterBoldBT", sans-serif;
+  letter-spacing: 1px;
+}
+@media (min-width: 992px) {
+  .about__navbar .navbar__logo {
+    font-size: 3rem;
+  }
+}
+.about__navbar .navbar__links {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .about__navbar .navbar__links {
+    width: 35%;
+  }
+}
+.about__navbar .navbar__links .navbar__link {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: white;
+  transition: color 250ms ease-out;
+  padding: 0.8rem;
+}
+.about__navbar .navbar__links .navbar__link:hover {
+  color: #a5bedf;
+}
+@media (min-width: 992px) {
+  .about__navbar .navbar__links .navbar__link {
+    font-size: 1.8rem;
+  }
+}
+.about__navbar .navbar__logo {
+  color: white;
+  text-decoration: none;
+}
+.about__navbar .navbar__links {
+  display: none;
+}
+@media (min-width: 600px) {
+  .about__navbar .navbar__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.about__navbar .mobileNav__toggle {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.about__navbar .mobileNav__toggle:hover {
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  .about__navbar .mobileNav__toggle {
+    display: none;
+  }
+}
+.navbar__links-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  top: 60px;
+  right: 0;
+  width: 70%;
+  height: 340px;
+  background: #37619b;
+  position: fixed;
+  z-index: 90;
+  transform: translateY(-400px);
+  transition: transform 400ms ease-out;
+}
+@media (min-width: 600px) {
+  .navbar__links-mobile {
+    display: none;
+  }
+}
+.navbar__links-mobile .navbar__link {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: white;
+  transition: color 250ms ease-out;
+  font-size: 2rem;
+}
+.navbar__links-mobile .navbar__link:hover {
+  color: #a5bedf;
+}
+@media (min-width: 992px) {
+  .navbar__links-mobile .navbar__link {
+    font-size: 1.8rem;
+  }
+}
+.toggle-mobileNav {
+  transform: translateY(0);
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background: none;
+  transition: background 400ms ease-out;
+}
+@media (min-width: 600px) {
+  .overlay {
+    display: none;
+  }
+}
+.darken-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+#about {
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 85%;
+}
+@media (min-width: 600px) {
+  #about {
+    width: 80%;
+  }
+}
+#about .about__heading {
+  font-family: "lucida_grandebold", sans-serif;
+  font-size: 2.5rem;
+  padding: 2.8rem 0;
+  color: #8186D5;
+}
+@media (min-width: 600px) {
+  #about .about__heading {
+    font-size: 3.5rem;
+  }
+}
+
+#about #about__team {
+  margin-top: 2.5rem;
+}
+@media (min-width: 600px) {
+  #about #about__team {
+    margin-top: 8rem;
+  }
+}
+#about #about__team .about__member {
+  position: relative;
+   padding: 1rem 0;
+}
+@media (min-width: 600px) {
+  #about #about__team .about__member {
+    padding: 2rem 0;
+  }
+}
+#about #about__team .about__member .about__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 2.5rem;
+}
+#about #about__team .about__member .about__info {
+  padding-bottom: 1.3rem;
+  border-bottom: 2px solid #8186d5;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 600px) {
+  #about #about__team .about__member .about__info {
+    width: 80%;
+  }
+}
+#about #about__team .about__member .about__info .about__info-text {
+  margin-right: auto;
+}
+#about #about__team .about__member .about__info .about__info-text .social__icons {
+  font-size: 3.5rem;
+  width: 85px;
+  margin-right: 0;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 600px) {
+  #about #about__team .about__member .about__info .about__info-text .social__icons {
+    width: 100px;
+    font-size: 4rem;
+    margin-top: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  #about #about__team .about__member .about__info .about__info-text .social__icons {
+    width: 120px;
+    font-size: 4.2rem;
+    margin-top: 4rem;
+  }
+}
+#about #about__team .about__member .about__info .about__info-text .social__icons .social__icon {
+  color: rgba(70, 70, 70, 0.9);
+  transition: color 250ms ease-out;
+}
+#about #about__team .about__member .about__info .about__info-text .social__icons .social__icon:hover {
+  color: #37619b;
+}
+#about #about__team .about__member .about__name {
+  font-size: 1.8rem;
+}
+@media (min-width: 600px) {
+  #about #about__team .about__member .about__name {
+    font-size: 2.8rem;
+  }
+}
+#about #about__team .about__member .about__job {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 1rem 0;
+  padding-top: 1rem;
+}
+@media (min-width: 600px) {
+  #about #about__team .about__member .about__job {
+    font-size: 2.2rem;
+    margin: 1.5rem 0;
+  }
+}
+#about #about__team .about__member .about__image {
+  height: 90px;
+  width: 90px;
+  margin-right: 1.5rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@media (min-width: 600px) {
+  #about #about__team .about__member .about__image {
+    width: 150px;
+    height: 150px;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  #about #about__team .about__member .about__image {
+    width: 180px;
+    height: 180px;
+    right: -10%;
+    bottom: -25%;
+  }
+}
+#about #about__team .about__member .about__personal {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2rem 0;
+}
+@media (min-width: 600px) {
+  #about #about__team .about__member .about__personal {
+    margin: 3rem 0;
+  }
+}
+@media (min-width: 992px) {
+  #about #about__team .about__member .about__personal {
+    width: 80%;
+    margin-top: 3.5rem;
+  }
+}
+#about #about__team .about__member .about__personal .about__text {
+  width: 60%;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  #about #about__team .about__member .about__personal .about__text {
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+  }
+}
+@media (min-width: 992px) {
+  #about #about__team .about__member .about__personal .about__text {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    margin-bottom: 3.5rem;
+  }
+}
+.show-content {
+  display: block;
+}
+.austin-img {
+  background: url(../images/austin.jpg);
+}
+.heber-img {
+  background: url(../images/heber.jpg);
+}
+.david-img {
+  background: url(../images/cat.jpg);
+}
+.sable-img {
+  background: url(../images/sable.jpg);
+}
+.mohd-img {
+  background: url(../images/mohd.jpeg);
+}
