@@ -399,7 +399,22 @@ header .navbar .vl {
 }
 @media (max-width: 1180px) {
   .middle-section .middle-section-text {
-    padding: 0 5rem 0 5rem;
+    padding: 0 8rem 0 8rem;
+  }
+}
+@media (max-width: 1080px) {
+  .middle-section .middle-section-text {
+    padding: 0 7rem;
+  }
+}
+@media (max-width: 942px) {
+  .middle-section .middle-section-text {
+    padding: 0 5.75rem;
+  }
+}
+@media (max-width: 870px) {
+  .middle-section .middle-section-text {
+    padding: 0 4.25rem;
   }
 }
 @media (max-width: 768px) {
@@ -409,12 +424,13 @@ header .navbar .vl {
 }
 @media (max-width: 750px) {
   .middle-section .middle-section-text {
-    padding: 0 3rem 0 3rem;
     width: 100%;
     padding: 0 2.5rem 0 2.5rem;
-    height: 22rem;
+    height: 30rem;
     margin-top: 5.5rem;
     justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
   }
 }
 @media (max-width: 620px) {
@@ -432,51 +448,74 @@ header .navbar .vl {
     justify-content: space-evenly;
   }
 }
-.middle-section .middle-section-text h2 {
-  font-size: 3.25rem;
+.middle-section .middle-section-text .middle-section-text-bkgd {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 100%;
+}
+@media (max-width: 750px) {
+  .middle-section .middle-section-text .middle-section-text-bkgd {
+    padding: 2rem;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.middle-section .middle-section-text .middle-section-text-bkgd h2 {
+  font-size: 4rem;
   text-align: center;
   color: #494ca2;
 }
 @media (max-width: 1180px) {
-  .middle-section .middle-section-text h2 {
-    font-size: 3rem;
+  .middle-section .middle-section-text .middle-section-text-bkgd h2 {
+    font-size: 3.75rem;
   }
 }
 @media (max-width: 870px) {
-  .middle-section .middle-section-text h2 {
-    font-size: 2.75rem;
+  .middle-section .middle-section-text .middle-section-text-bkgd h2 {
+    font-size: 3.5rem;
   }
 }
 @media (max-width: 750px) {
-  .middle-section .middle-section-text h2 {
-    font-size: 3rem;
+  .middle-section .middle-section-text .middle-section-text-bkgd h2 {
+    font-size: 5rem;
     text-align: initial;
   }
 }
 @media (max-width: 500px) {
-  .middle-section .middle-section-text h2 {
+  .middle-section .middle-section-text .middle-section-text-bkgd h2 {
     text-align: initial;
     font-size: 2.75rem;
   }
 }
-.middle-section .middle-section-text p {
-  font-size: 2.25rem;
+.middle-section .middle-section-text .middle-section-text-bkgd li {
+  font-size: 3rem;
   text-align: justify;
   color: #494ca2;
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-top: 0.8rem;
 }
 @media (max-width: 1180px) {
-  .middle-section .middle-section-text p {
-    font-size: 2rem;
+  .middle-section .middle-section-text .middle-section-text-bkgd li {
+    font-size: 2.75rem;
+  }
+}
+@media (max-width: 1080px) {
+  .middle-section .middle-section-text .middle-section-text-bkgd li {
+    font-size: 2.4rem;
   }
 }
 @media (max-width: 870px) {
-  .middle-section .middle-section-text p {
-    font-size: 1.85rem;
+  .middle-section .middle-section-text .middle-section-text-bkgd li {
+    font-size: 2.25rem;
   }
 }
 @media (max-width: 750px) {
-  .middle-section .middle-section-text p {
-    font-size: 2rem;
+  .middle-section .middle-section-text .middle-section-text-bkgd li {
+    font-size: 3rem;
+    list-style-position: inside;
   }
 }
 .lower-section {

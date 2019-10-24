@@ -162,7 +162,19 @@
     justify-content: space-evenly;
 
     @media @max1180 {
-      padding: 0 5rem 0 5rem;
+      padding: 0 8rem 0 8rem;
+    }
+
+    @media @max1080 {
+      padding: 0 7rem;
+    }
+
+    @media @max942 {
+      padding: 0 5.75rem;
+    }
+
+    @media @max870 {
+      padding: 0 4.25rem;
     }
 
     @media @medium {
@@ -170,12 +182,13 @@
     }
 
     @media @max750 {
-      padding: 0 3rem 0 3rem;
       width: 100%;
       padding: 0 2.5rem 0 2.5rem;
-      height: 22rem;
+      height: 30rem;
       margin-top: 5.5rem;
       justify-content: space-evenly;
+      align-items: center;
+      background-color: white;
     }
 
     @media @max620 {
@@ -191,52 +204,76 @@
       justify-content: space-evenly;
     }
 
-    h2 {
-      font-size: 3.25rem;
-      text-align: center;
-      color: @font-color;
+    .middle-section-text-bkgd {
+      .disFlex();
+      justify-content: space-evenly;
+      flex-direction: column;
+      height: 100%;
+
+      @media @max750 {
+        padding: 2rem;
+        background-color: white;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      h2 {
+        font-size: 4rem;
+        text-align: center;
+        color: @font-color;
       
-      @media @max1180 {
+        @media @max1180 {
+          font-size: 3.75rem;
+        }
+
+        @media @max870 {
+          font-size: 3.5rem;
+        }
+
+        @media @max750 {
+          font-size: 5rem;
+          text-align: initial;
+        }
+
+        @media @phone {
+          text-align: initial;
+          font-size: 2.75rem;
+        }
+      }
+
+      li {
         font-size: 3rem;
-      }
+        text-align: justify;
+        color: @font-color;
+        list-style-type: disc;
+        list-style-position: outside;
+        margin-top: .8rem;
 
-      @media @max870 {
-        font-size: 2.75rem;
-      }
+        @media @max1180 {
+          font-size: 2.75rem;
+        }
 
-      @media @max750 {
-        font-size: 3rem;
-        text-align: initial;
-      }
+        @media @max1080 {
+          font-size: 2.40rem;
+        }
 
-      @media @phone {
-        text-align: initial;
-        font-size: 2.75rem;
-      }
-    }
+        @media @max870 {
+          font-size: 2.25rem;
+        }
 
-    p {
-      font-size: 2.25rem;
-      text-align: justify;
-      color: @font-color;
-
-      @media @max1180 {
-        font-size: 2rem;
-      }
-
-      // @media @max1080 {
-      // }
-
-      @media @max870 {
-        font-size: 1.85rem;
-      }
-
-      @media @max750 {
-        font-size: 2rem;
-      }
+        @media @max750 {
+          font-size: 3rem;
+          list-style-position: inside;
+        }
 
       // @media @phone {
       // }
+      // li {
+      //   list-style-type: disc;
+      //   list-style-position: outside;
+      //   margin-top: .8rem;
+      // }
+      }
     }
   }
 }
